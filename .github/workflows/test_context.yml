@@ -27,6 +27,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo github.event_name ${{ github.event_name }}
-          echo github.head_commit.committer.name ${{ github.head_commit.committer.name }}
+          echo github.event.push.head_commit.committer.name ${{ github.event.head_commit.committer.name }}
           echo github.event.pull_request.user.login  ${{ github.event.pull_request.user.login }}
           echo github.actor ${{ github.actor }}
