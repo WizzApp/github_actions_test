@@ -28,5 +28,6 @@ jobs:
         run: |
           echo github.event_name ${{ github.event_name }}
           echo github.event.push.head_commit.author.name ${{ github.event.head_commit.author.name }}
+          echo github.event.push.head_commit.author.username ${{ github.event.push.head_commit.author.username }}
           echo github.event.pull_request.user.login  ${{ github.event.pull_request.user.login }}
           echo github.actor ${{ github.actor }}
